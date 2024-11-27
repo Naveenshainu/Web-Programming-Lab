@@ -36,7 +36,7 @@
                 day++;
              }
              document.write("<tr>");
-                strat_day=i;
+                start_day=i;
              }
             document.write("</tr></table><br>");
         }
@@ -47,7 +47,9 @@
 
         fill_table("January", 31);
         if (year % 4 == 0 )   
-          fill_table("February", 28);
+          fill_table("February", 29);
+        else
+           fill_table("February", 28); 
         fill_table("March", 31);
         fill_table("April", 30);
         fill_table("May", 31);
